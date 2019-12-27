@@ -9,7 +9,6 @@ set softtabstop=4
 set expandtab
 set ruler
 set laststatus=2  " Always display the status line
-set backspace=eol
 
 " Use jj instead of esc
 inoremap jj <esc>
