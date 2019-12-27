@@ -20,9 +20,6 @@ set ignorecase
 " Highlight search results
 set hlsearch
 
-" Show matching brackets when text indicator is over them
-set showmatch
-
 " Be smart when using tabs ;)
 set smarttab
 
@@ -45,4 +42,9 @@ let g:ctrlp_working_path_mode = 0
 " Activate CtrlP
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_map = '<c-p>'
+
+" Change shape of cursor bwt modes
+let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+let &t_SR = "\<Esc>]50;CursorShape=2\x7"
+let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 
